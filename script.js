@@ -40,13 +40,13 @@ function loadNotes() {
   }
 }
 
-function updateNoteCount(filteredCount = notes.length) {
-  if (notes.length === 0) {
+function updateNoteCount(count) {
+  if (count === 0) {
     noteCount.textContent = "You have no notes yet.";
-  } else if (notes.length === 1) {
+  } else if (count === 1) {
     noteCount.textContent = "You have 1 note.";
   } else {
-    noteCount.textContent = `You have ${notes.length} notes.`;
+    noteCount.textContent = `You have ${count} notes.`;
   }
 }
 
